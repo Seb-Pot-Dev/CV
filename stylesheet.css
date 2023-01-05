@@ -15,21 +15,6 @@ body {
   /* max-height:max-content; */
 }
 
-/* ---------------------Header------------------- */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(
-    to right,
-    var(--primary-color),
-    var(--secondary-color)
-  );
-  color: white;
-  animation: gradient 8s ease infinite;
-  background-size: 200% 100%;
-  max-height: 70px;
-}
 .socials {
   color: white;
   text-decoration: none;
@@ -45,14 +30,38 @@ header {
   animation: pulse 8s infinite;
 }
 /* ---------------------Main------------------------ */
+/* ---------------------Header------------------- */
+header {
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 70px;
+    /* max-width: 1000px; */
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+    );
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 10px;
+    border-radius: 5px;
+    animation: gradient 8s ease infinite;
+    background-size: 200% 100%;
+  
+}
 main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 10px 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 1), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 6px;
   /* min-height: 60em; */
 }
 
@@ -126,6 +135,7 @@ footer {
   animation: gradient 10s ease infinite;
   background-size: 200% 100%;
   bottom: 0;
+  border-radius: 5px;
 }
 
 /* ---------------- Keyframes------------ */
