@@ -9,7 +9,7 @@
 body {
   font-family: "Lato", sans-serif;
   color: #444;
-  background: linear-gradient(to right, #eee, rgba(144, 144, 144, 0.705));
+  background: linear-gradient(to right, #eee, #9393939b);
   margin: 0;
   padding: 0;
   /* max-height:max-content; */
@@ -70,22 +70,22 @@ main {
   border-radius: 5px;
 }
 p {
-    margin: 0;
+  margin: 0;
 }
 
 /* ---------------Expériences---------------- */
 .experience h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-    color: var(--primary-color);
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: var(--primary-color);
 }
 
 /* -------------- Études et formations ----------------------*/
 
 .education h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-    color: var(--primary-color);
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: var(--primary-color);
 }
 
 /* -----------------Compétences------------------ */
@@ -131,13 +131,17 @@ footer {
 /* ---------------- Keyframes------------ */
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 var(--secondary-color);
+    box-shadow: 0 0 0 0 var(--primary-color);
+    rotate: -1deg;
   }
   70% {
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0);
+    rotate: 1deg;
   }
   100% {
-    box-shadow: 0 0 0 0 var(--primary-color);
+    box-shadow: 0 0 0 0 var(--secondary-color);
+    rotate: -1deg;
+
   }
 }
 
